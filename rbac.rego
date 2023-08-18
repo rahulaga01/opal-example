@@ -51,15 +51,15 @@ package istio.authz
     }
 
     user_roles = {
-        "expired": ["guest"],
-        "not_expired": ["admin"],
+        "expired": ["admin"],
+        "not_expired": ["guest"],
     }
 
     role_perms = {
         "guest": [
-            {"method": "GET", "path": "/api/v1/products"},
+            {"method": "GET", "path": "/productpage"},
         ],
         "admin": [
-            {"method": "GET", "path": "/productpage"},
+            {"method": "GET", "path": "/api/v1/products"},
         ],
     }
