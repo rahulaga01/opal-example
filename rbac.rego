@@ -57,9 +57,9 @@ package istio.authz
 
     role_perms = {
         "guest": [
-            {"method": "GET", "path": "/productpage"},
+            {"method": "GET", "path": "/api/v1/products"},
         ],
         "admin": [
-            {"method": "GET", "path": "/api/v1/products"},
+            {"method": "GET", "path": "/productpage"},
         ],
     }
