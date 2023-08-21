@@ -57,7 +57,7 @@ user_roles = {
 
 role_perms = {
     "guest": [
-        {"method": "GET", "path": "/productpage"},
+     
     ],
     "admin": [
         {"method": "GET", "path": "/api/v1/products"},
