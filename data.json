@@ -82,6 +82,10 @@
        "type": "cat"
      },
      {
+       "action": "update",
+       "type": "finance"
+     },
+     {
        "action": "read",
        "type": "finance"
      }
