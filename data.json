@@ -1,14 +1,90 @@
 {
-  "attributes": {
-    "request": {
-      "http": {
-        "method": "GET",
-        "path": "/api/v1/products",
-        "headers": {
-          "authorization": "Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJPbmxpbmUgSldUIEJ1aWxkZXIiLCJpYXQiOjE2OTE5NzczNjYsImV4cCI6MTYzMjU1NzQ1NywiYXVkIjoid3d3LmV4YW1wbGUuY29tIiwic3ViIjoianJvY2tldEBleGFtcGxlLmNvbSIsIkdpdmVuTmFtZSI6IkpvaG5ueXJhIiwiU3VybmFtZSI6IlJvY2tldCIsIkVtYWlsIjoianJvY2tldEBleGFtcGxlLmNvbSIsIlJvbGUiOlsiTWFuYWdlciIsIlByb2plY3QgQWRtaW5pc3RyYXRvciJdfQ.0fPCFMTJwX-RPBR_ijzse0OiRfS5_AZjZ8GgndNN93s"
-        }
+  "users": {
+    "alice": {
+      "roles": ["admin"],
+      "location": {
+        "country": "US",
+        "ip": "8.8.8.8"
+      }
+    },
+    "bob": {
+      "roles": ["employee", "billing"],
+      "location": {
+        "country": "US",
+        "ip": "8.8.8.8"
+      }
+    },
+     "sunil": {
+      "roles": ["guest"],
+      "location": {
+        "country": "US",
+        "ip": "8.8.8.8"
+      }
+    },
+    "eve": {
+      "roles": ["customer"],
+      "location": {
+        "country": "US",
+        "ip": "8.8.8.8"
       }
     }
+  },
+  "role_permissions": {
+    "customer": [
+      {
+        "action": "read",
+        "type": "dog"
+      },
+      {
+        "action": "read",
+        "type": "cat"
+      },
+      {
+        "action": "adopt",
+        "type": "dog"
+      },
+      {
+        "action": "adopt",
+        "type": "cat"
+      }
+    ],
+    "employee": [
+      {
+        "action": "read",
+        "type": "dog"
+      },
+      {
+        "action": "read",
+        "type": "cat"
+      },
+      {
+        "action": "update",
+        "type": "dog"
+      },
+      {
+        "action": "update",
+        "type": "cat"
+      }
+    ],
+    "billing": [
+      {
+        "action": "read",
+        "type": "finance"
+      },
+      {
+        "action": "update",
+        "type": "finance"
+      }
+    ],
+    "guest": [
+     {
+       "action": "read",
+       "type": "cat"
+     },
+     {
+       "action": "read",
+       "type": "finance"
+     }
+    ]
   }
 }
-
