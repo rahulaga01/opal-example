@@ -86,10 +86,6 @@
        "type": "finance"
      },
      {
-       "action": "delete",
-       "type": "cat"
-     },
-     {
        "action": "read",
        "type": "finance"
      }
