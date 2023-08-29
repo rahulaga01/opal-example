@@ -73,7 +73,7 @@
       },
       {
         "action": "update",
-        "type": "finance"
+        "type": "cat"
       }
     ],
     "guest": [
