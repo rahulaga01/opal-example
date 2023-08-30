@@ -72,10 +72,6 @@
         "type": "finance"
       },
       {
-       "action": "update",
-       "type": "finance"
-      },
-      {
         "action": "update",
         "type": "cat"
       }
